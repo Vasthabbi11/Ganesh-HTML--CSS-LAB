@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Gmail</title>
+    <style>
+    h2{
+        text-align: center;
+    }
+    .login{
+        color: white;
+        width: 300px;
+        padding: 10px;
+        position: absolute;
+        font-size: 20px;
+        top: 10%;
+        right: 450px; 
+        line-height: 45px;
+        border-radius: 0.2px;
+        background: transparent;
+        text-align: left;
+        vertical-align: middle;
+    }
+    input{
+        height: 30px;
+        width: 75%;
+        padding-left: 15px;
+        border-radius: 0.2px;
+    }
+    button{
+        margin-top: 8px;
+        width:120px;
+        height: 30px;
+        padding: 2px;
+        float: center;
+        vertical-align: middle;
+        font-size: 15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border-radius: 0.2px;
+        background-color: purple;
+        color: white;
+    }
+    #myVideo{
+        position: fixed;
+        width: auto;
+        height: auto;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div style="width:400px;height:300px;border:1px solid #000;"
+    class="login">
+        <h3>Create Gmail Account</h3>
+        <form action="Home.html">
+            <input type="text" name="u_name" placeholder="Full Name" required><br>
+            <input type="password" name="u_pswd" placeholder="Contact Number" minlength="10" required>
+            <input type="text" name="u_email" placeholder="Enter Email ID" required><br>
+            <button>Submit</button>      <button>Reset</button>
+        </form>
+    </div>
+
+</body>
+</html>
